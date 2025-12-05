@@ -7,6 +7,7 @@ node_modules/
 .venv/
 venv/
 __pycache__/
+*.py
 
 # Build outputs
 dist/

@@ -1,0 +1,11 @@
+requirements.txt
+*.py
+__pycache__/
+.python-version
+venv/
+.venv/
+pyproject.toml
+setup.py
+Pipfile
+Pipfile.lock
+
