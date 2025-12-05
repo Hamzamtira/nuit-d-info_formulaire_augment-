@@ -1,0 +1,15 @@
+{
+  "name": "nexus-connecte",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "cd Backend && npm install",
+    "start": "cd Backend && node server.js"
+  }
+}
+

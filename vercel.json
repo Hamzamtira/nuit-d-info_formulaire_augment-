@@ -1,8 +1,22 @@
 {
   "version": 2,
-  "buildCommand": null,
   "framework": null,
-  "installCommand": null,
-  "outputDirectory": null
+  "buildCommand": "cd Backend && npm install",
+  "installCommand": "cd Backend && npm install",
+  "builds": [
+    {
+      "src": "Backend/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "Backend/server.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }
 
