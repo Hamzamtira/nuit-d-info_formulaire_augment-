@@ -1,9 +1,11 @@
 // controllers/submission.controller.js
-const AIService = require('../services/ai.service');
+const AIService = require('../services/AIService');
 
 const handleSubmission = async (req, res) => {
   try {
-    const { mission, nom, email, message, details } = req.body;
+    // Le frontend envoie les données dans userInput
+    const userInput = req.body.userInput || req.body;
+    const { mission, nom, email, message, details } = userInput;
 
     if (!mission || !nom || !email) {
       return res.status(400).json({
